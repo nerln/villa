@@ -1,0 +1,9 @@
+$ # the command VC3D builds today when "Also write TIFF slices (Zarr)" is checked
+$ vc_render_tifxyz ... --zarr-output surface.zarr --include-tifs
+Error: unrecognised option '--include-tifs'
+Use --help for usage information
+
+$ # the command it builds after this change
+$ vc_render_tifxyz ... --zarr-output surface.zarr --tif-output surface_layers
+zarr dataset size for group 0 [21000 6700 9100 ]
+Rendering: /Volumes/AppsAndFiles/dev/op6-causal/mesh/on-131838.tifxyz -> /private/tmp/claude-501/-Users-eugenionerelli-dev/0855caf0-ba3e-4779-b3cc-d970e75f1765/scratchpad/evidence/surface.zarr (zarr) -> /private/tmp/claude-501/-Users-eugenionerelli-dev/0855caf0-ba3e-4779-b3cc-d970e75f1765/scratchpad/evidence/surface_layers (tif)
